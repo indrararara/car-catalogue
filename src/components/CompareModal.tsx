@@ -19,7 +19,7 @@ const CompareModal = ({ cars, onClose }: Props) => {
 
   const getValue = (car: Car, spec: string) => {
     switch (spec) {
-      case "Price": return `$${car.price.toLocaleString()}`;
+      case "Price": return `₹${car.price.toLocaleString("en-IN")}`;
       case "Year": return car.year;
       case "Fuel Type": return car.fuelType;
       case "Horsepower": return `${car.horsepower} HP`;

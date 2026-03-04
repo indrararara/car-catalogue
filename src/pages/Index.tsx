@@ -21,7 +21,7 @@ const Index = () => {
   const [search, setSearch] = useState("");
   const [selectedBrand, setSelectedBrand] = useState("");
   const [selectedFuel, setSelectedFuel] = useState("");
-  const [priceRange, setPriceRange] = useState<[number, number]>([0, 100000]);
+  const [priceRange, setPriceRange] = useState<[number, number]>([0, 15000000]);
   const [sort, setSort] = useState("");
   const [selectedCar, setSelectedCar] = useState<Car | null>(null);
   const [compareIds, setCompareIds] = useState<number[]>([]);

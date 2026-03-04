@@ -31,7 +31,7 @@ const CarDetailsModal = ({ car, onClose }: Props) => {
         <div className="p-6">
           <p className="text-sm font-medium uppercase tracking-wider text-muted-foreground">{car.brand}</p>
           <h2 className="font-heading text-2xl font-bold">{car.model}</h2>
-          <p className="mt-1 font-heading text-3xl font-bold text-primary">${car.price.toLocaleString()}</p>
+          <p className="mt-1 font-heading text-3xl font-bold text-primary">₹{car.price.toLocaleString("en-IN")}</p>
           <p className="mt-3 text-muted-foreground">{car.description}</p>
           <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
             {[
