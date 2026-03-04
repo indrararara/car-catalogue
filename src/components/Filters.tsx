@@ -46,13 +46,13 @@ const Filters = ({
     trackFilterApplied("price_max", String(v));
   };
 
-  const hasFilters = search || selectedBrand || selectedFuel || priceRange[0] > 0 || priceRange[1] < 100000;
+  const hasFilters = search || selectedBrand || selectedFuel || priceRange[0] > 0 || priceRange[1] < 15000000;
 
   const clearAll = () => {
     onSearchChange("");
     onBrandChange("");
     onFuelChange("");
-    onPriceRangeChange([0, 100000]);
+    onPriceRangeChange([0, 15000000]);
     onSortChange("");
   };
 
@@ -95,7 +95,7 @@ const Filters = ({
         <div className="flex items-center gap-1">
           <input
             type="number"
-            placeholder="Min $"
+            placeholder="Min ₹"
             value={priceRange[0] || ""}
             onChange={(e) => handleMinPrice(Number(e.target.value) || 0)}
             className="w-24 rounded-lg border bg-card px-3 py-2 text-sm outline-none ring-ring focus:ring-2"
@@ -103,9 +103,9 @@ const Filters = ({
           <span className="text-muted-foreground">–</span>
           <input
             type="number"
-            placeholder="Max $"
-            value={priceRange[1] === 100000 ? "" : priceRange[1]}
-            onChange={(e) => handleMaxPrice(Number(e.target.value) || 100000)}
+            placeholder="Max ₹"
+            value={priceRange[1] === 15000000 ? "" : priceRange[1]}
+            onChange={(e) => handleMaxPrice(Number(e.target.value) || 15000000)}
             className="w-24 rounded-lg border bg-card px-3 py-2 text-sm outline-none ring-ring focus:ring-2"
           />
         </div>
