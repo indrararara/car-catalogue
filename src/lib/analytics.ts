@@ -11,7 +11,7 @@
  */
 
 // Placeholder Measurement ID — replace with your real GA4 ID
-const GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
+const GA_MEASUREMENT_ID = "G-3XYY6EEE00";
 
 declare global {
   interface Window {
